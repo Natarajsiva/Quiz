@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #83c5be; 
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b95f1a;
+        }
+
+        #score {
+            font-size: 24px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #score.big {
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <p id="sol">Points: <span id="score">0</span></p>
+            <p>1. Who was the father of the computer?</p>
+            <input type="radio" name="q1" value="wrong" id="Dennis Ritchie" required>
+            <label for="Dennis Ritchie">Dennis Ritchie</label><br>
+            <input type="radio" name="q1" value="wrong" id="Charlie Babbage" required>
+            <label for="Charlie Babbage">Charlie Babbage</label><br>
+            <input type="radio" name="q1" value="correct" id="Charles Babbage" required>
+            <label for="Charles Babbage">Charles Babbage</label><br>
+            
+            <p>2. What is the full form of CPU?</p>
+            <input type="radio" name="q2" value="correct" id="Central Processing Unit" required>
+            <label for="Central Processing Unit">Central Processing Unit</label><br>
+            <input type="radio" name="q2" value="wrong" id="Central Programming Unit" required>
+            <label for="Central Programming Unit">Central Programming Unit</label><br>
+            <input type="radio" name="q2" value="correct" id="Central Process Unit" required>
+            <label for="Central Process Unit">Central Process Unit</label><br>
+            
+            <p>3. What is the full form of CU?</p>
+            <input type="radio" name="q3" value="wrong" id="Compound Unit" required>
+            <label for="Compound Unit">Compound Unit</label><br>
+            <input type="radio" name="q3" value="wrong" id="Computer Unit" required>
+            <label for="Computer Unit">Computer Unit yes</label><br>
+            <input type="radio" name="q3" value="correct" id="Control Unit" required>
+            <label for="Control Unit">Control Unit</label><br>
+            
+            <p>4. Who is known as the father of modern computer science?</p>
+            <input type="radio" name="q4" value="wrong" id="Alan Turing" required>
+            <label for="Alan Turing">Alan Turing</label><br>
+            <input type="radio" name="q4" value="correct" id="Charles Babbage" required>
+            <label for="Charles Babbage">Charles Babbage</label><br>
+            <input type="radio" name="q4" value="wrong" id="Ada Lovelace" required>
+            <label for="Ada Lovelace">Ada Lovelace</label><br>
+            
+            <p>5. What does HTML stand for?</p>
+            <input type="radio" name="q5" value="correct" id="Hyper Text Markup Language" required>
+            <label for="Hyper Text Markup Language">Hyper Text Markup Language</label><br>
+            <input type="radio" name="q5" value="wrong" id="High Tech Modern Language" required>
+            <label for="High Tech Modern Language">High Tech Modern Language</label><br>
+            <input type="radio" name="q5" value="wrong" id="Hyperlink and Text Markup Language" required>
+            <label for="Hyperlink and Text Markup Language">Hyperlink and Text Markup Language</label><br>
+            
+            <p>6. Which programming language is often used for building mobile applications?</p>
+            <input type="radio" name="q6" value="correct" id="Java" required>
+            <label for="Java">Java</label><br>
+            <input type="radio" name="q6" value="wrong" id="Python" required>
+            <label for="Python">Python</label><br>
+            <input type="radio" name="q6" value="wrong" id="C++" required>
+            <label for="C++">C++</label><br>
+            
+            <p>7. Which computer language is also known as the "mother of all languages"?</p>
+            <input type="radio" name="q7" value="wrong" id="Fortran" required>
+            <label for="Fortran">Fortran</label><br>
+            <input type="radio" name="q7" value="correct" id="Assembly Language" required>
+            <label for="Assembly Language">Assembly Language</label><br>
+            <input type="radio" name="q7" value="wrong" id="COBOL" required>
+            <label for="COBOL">COBOL</label><br>
+            
+            <p>8. What does CSS stand for in web development?</p>
+            <input type="radio" name="q8" value="correct" id="Cascading Style Sheets" required>
+            <label for="Cascading Style Sheets">Cascading Style Sheets</label><br>
+            <input type="radio" name="q8" value="wrong" id="Computer Style Sheets" required>
+            <label for="Computer Style Sheets">Computer Style Sheets</label><br>
+            <input type="radio" name="q8" value="wrong" id="Creative Style Sheets" required>
+            <label for="Creative Style Sheets">Creative Style Sheets</label><br>
+            
+            <p>9. Who developed the Python programming language?</p>
+            <input type="radio" name="q9" value="wrong" id="Guido van Rossum" required>
+            <label for="Guido van Rossum">Guido van Rossum</label><br>
+            <input type="radio" name="q9" value="wrong" id="Larry Page" required>
+            <label for="Larry Page">Larry Page</label><br>
+            <input type="radio" name="q9" value="correct" id="Guido van Rossum" required>
+            <label for="Guido van Rossum">Guido van Rossum</label><br>
+            
+            <p>10. What does the acronym "HTTP" stand for in web addresses?</p>
+            <input type="radio" name="q10" value="correct" id="Hypertext Transfer Protocol" required>
+            <label for="Hypertext Transfer Protocol">Hypertext Transfer Protocol</label><br>
+            <input type="radio" name="q10" value="wrong" id="Hypertext Technical Protocol" required>
+            <label for="Hypertext Technical Protocol">Hypertext Technical Protocol</label><br>
+            <input type="radio" name="q10" value="wrong" id="Hyper Transfer Text Protocol" required>
+            <label for="Hyper Transfer Text Protocol">Hyper Transfer Text Protocol</label><br>
+
+
+            <button type="button" onclick="check()">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function check() {
+            const questions = [
+                'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'
+            ];
+
+            let allAnswered = true;
+            let count = 0;
+
+            for (let i = 0; i < questions.length; i++) {
+                const selectedOption = document.querySelector('input[name="' + questions[i] + '"]:checked');
+                if (selectedOption) {
+                    if (selectedOption.value === 'correct') {
+                        count++;
+                    }
+                } else {
+                    allAnswered = false;
+                    break;
+                }
+            }
+
+            if (allAnswered) {
+                const scoreElement = document.getElementById('score');
+                scoreElement.textContent = count;
+                scoreElement.classList.add('big');
+            } else {
+                alert('Please answer all questions before submitting.');
+            }
+        }
+    </script>
+</body>
+
+</html>
